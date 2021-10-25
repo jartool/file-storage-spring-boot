@@ -1,0 +1,29 @@
+body {
+    overflow: hidden;
+}
+
+li::marker {
+    /* ❌ counter(list-item)*/
+    content: counter(list-item)".  ";
+}
+
+.jList {
+    overflow: auto;
+    height: 480px;
+}
+.jList::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    scrollbar-arrow-color: #278ff0;
+}
+.jList::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+    scrollbar-arrow-color: #278ff0;
+}
+.jList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
